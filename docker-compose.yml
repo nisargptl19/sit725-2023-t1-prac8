@@ -1,0 +1,10 @@
+version: '4'
+services:
+  frontend:
+    image: sit725-2023-t1-prac8
+    container_name: sit725
+    build:
+      context: .
+      dockerfile: docker/sit725/Dockerfile
+    ports:
+      - "3001:3001"
